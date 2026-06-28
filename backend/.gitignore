@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Environment variables (database password, API keys yahan hote hain)
+.env
+.env.local
+.env.development
+.env.production
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# Build output (agar TypeScript use kar rahe hain)
+dist/
+build/
+
+# Database files (agar SQLite use kar rahe hain)
+*.sqlite
+*.sqlite3
