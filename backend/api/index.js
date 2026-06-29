@@ -92,4 +92,4 @@ app.post('/login', async (req, res) => {
   res.json({ token })
 })
 
-app.listen(3000, () => console.log("Server ready!"))
+module.exports = app;
