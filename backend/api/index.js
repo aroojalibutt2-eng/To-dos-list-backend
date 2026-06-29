@@ -33,6 +33,12 @@ done: { type: Boolean, default: false },
 })
 
 const Todo = mongoose.model('Todo', todoSchema)
+
+// Yeh route batata hai ke server zinda hai (root URL "/" ke liye)
+app.get('/', (req, res) => {
+  res.json({ message: "Backend is running!" })
+})
+
 // Sare todos lao
 app.get('/todos', async (req, res) => {
   const token = req.headers.authorization
